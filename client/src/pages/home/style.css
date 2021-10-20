@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
+.intro {
+  text-align:left;
+  color:white;
+  font-size:0.9rem;
+  margin-top:20px;
+  width:600px; 
+  font-family: 'Noto Sans Mono', monospace;
+  display: inline-block;
+}
+
+.downloadCvButton {
+  padding: 10px 30px;
+  color: white;
+  margin-top:20px;
+  font-family: 'Noto Sans Mono', monospace;
+  font-weight: bolder;
+  border: none;
+  display: block;
+}
+.quote{
+  margin-right: 150px;
+  padding-left: 10px;
+  color: white;
+  font-size: 22pt;
+  font-weight: bolder;
+  float: right;
+}
+
+

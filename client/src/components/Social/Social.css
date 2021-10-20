@@ -1,0 +1,41 @@
+.social-container {
+  background: transparent;
+  padding: 20px 20px 0px 0px;
+}
+
+a.social {
+  margin: 10px 20px;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.linkedin {
+  color: white;
+  font-size: 20px;
+}
+
+a.facebook {
+  color: white;
+}
+
+a.twitter {
+  color: white;
+}
+
+a.instagram {
+  color: white;
+}
+
+a.github {
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .social-container {
+   display: none;
+  }
+}

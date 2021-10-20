@@ -1,13 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,900;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  /* font-family: 'Overpass', sans-serif; */
+  font-family: 'Domine', serif;
 }
-.App {
-  text-align: center;
-  position: relative;
-}
-
 
 /* DEMO STYLES */
 /* .nav {
@@ -35,11 +34,25 @@ section {
   margin: 0 auto;
 } */
 
-.page {
-  position: absolute;
-  top: 100px;
-  left: 0;
-  right: 0;
+.homeBackground {
+  background: url("./images/background1.png") center top; 
+  height: 100vh; 
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+}
+
+@media (max-width: 768px) {
+  .homeBackground {
+    background: url("./images/mobileBackground1.png")  top left; 
+  /* background: url("./images/background1.png") center top; 
+  height: 100vh; 
+  width: 100vw;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; */
+  position: relative;
+  }
 }
 
 /* simple - enter transition 300ms, exit 150ms */

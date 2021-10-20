@@ -2,30 +2,53 @@ import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 // import { Link, glide } from 'react-tiger-transition';
 import styled from 'styled-components';
+import Color from '../../ColorPicking/Color';
 
 export const Nav = styled.nav`
-  background: #000;
+  background: black;
   height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 0.1rem calc((80vw - 1000px) / 2);
+  padding: 0 0.2rem;
   z-index: 10;
+  
+  // overflow:auto;
 
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(Link).attrs((props: { selectedColor: String }) => props)`
   color: #fff;
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0px;
+  margin: 0px;
   height: 100%;
   cursor: pointer;
 
-  &.active {
-    color: #15cdfc;
+  &:hover {
+    color: ${props => props.selectedColor};
+  }
+`;
+
+export const NavButton = styled.button.attrs((props: { selectedColor: String }) => props)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-family: 'Domine', serif;
+  font-size:1rem;
+
+  &:hover {
+    color: ${props => props.selectedColor};
   }
 `;
 
@@ -47,7 +70,7 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   // align-items: center;
-  width: 500px;
+  width: 350px;
   justify-content: space-between;
   // margin-right: -24px;
 
@@ -61,6 +84,19 @@ export const NavMenu = styled.div`
   @media screen and (max-width: 768px) {
     display: none;
   }
+`;
+export const Customization = styled.p.attrs((props: { selectedColor: String }) => props)`
+color: #fff;
+display: flex;
+align-items: center;
+padding: 0px;
+margin: 0px;
+height: 100%;
+cursor: pointer;
+
+&:hover {
+  color: ${props => props.selectedColor}};
+}
 `;
 
 export const NavBtn = styled.nav`

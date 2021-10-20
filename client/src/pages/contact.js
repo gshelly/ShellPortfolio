@@ -1,10 +1,10 @@
 import React from 'react';
 import PageTransition from '../components/PageTransition/PageTransition';
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <>
-    <PageTransition />
+    {props.toggleNewColor ?  <PageTransition selectedColor={props.selectedColor} /> : null }
     <div
     className="page">
      <section>
