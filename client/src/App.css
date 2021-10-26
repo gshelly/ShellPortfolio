@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,900;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   /* font-family: 'Overpass', sans-serif; */
   font-family: 'Domine', serif;
-  /* background-color: black; */
+  background-color: black;
+  color: white;
   /* position: fixed; */
 }
 
