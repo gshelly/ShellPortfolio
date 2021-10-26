@@ -12,7 +12,7 @@ export const SidebarContainer = styled.aside`
   display: grid;
   align-items: center;
   left: 0;
-  transition: 0.3s ease-in-out;
+  /* transition: 0.1s ease-in-out; */
   opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
   top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
 `;
@@ -32,7 +32,7 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-color: #fff;
+color: red;
 `;
 
 export const SidebarMenu = styled.ul`
@@ -53,33 +53,31 @@ export const SidebarLink = styled(Link)`
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
-  transition: 0.2s ease-in-out;
   color: #fff;
   cursor: pointer;  
 
   &:hover {
     transition: 0.2s ease-in-out;
-    color: red;
+    color: ${({selectedColor}) => (selectedColor ? selectedColor : null)};;
   }
 `;
 
-// export const SidebarRoute = styled(LinkR)`
-// border-radius: 50px;
-// background: red;
-// white-space: nowrap;
-// padding: 16px 64px;
-// color: #010606;
-// font-size: 1.5rem;
-// cursor: pointer;
-// outline: none;
-// transition: 0.2s ease-in-out;
-// text-decoration: none;
-// border: none;
+export const SidebarButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  /* text-decoration: none; */
+  list-style: none;
+  /* transition: 0.2s ease-in-out; */
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;  
 
-// &:hover {
-//   transition: all 0.2s ease-in-out;
-//   background: #fff;
-//   color: #010606;
-// }
-// `;
+  &:hover {
+    transition: 0.2s ease-in-out;
+    color: ${({selectedColor}) => (selectedColor ? selectedColor : null)};;
+  }
+`;
 

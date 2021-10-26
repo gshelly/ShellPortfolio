@@ -1,10 +1,11 @@
 .social-container {
   background: transparent;
   padding: 20px 20px 0px 0px;
+  /* margin-left: 70px; */
 }
 
 a.social {
-  margin: 10px 20px;
+  margin: 10px 15px;
   transition: transform 250ms;
   display: inline-block;
 }
@@ -35,7 +36,18 @@ a.github {
 }
 
 @media (max-width: 1000px) {
-  .social-container {
-   display: none;
+  a.linkedin,
+  a.facebook,
+  a.twitter,
+  a.instagram,
+  a.github {
+    
+    font-size: 15px;
   }
+
+
+  a.social {
+    margin: 10px 2px;
+  }
+
 }

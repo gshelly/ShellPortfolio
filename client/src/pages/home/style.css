@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
 
+.homeBackground {
+  background: url("../../images/background1.png") center top; 
+  height: 100vh; 
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+}
+
+@media (max-width: 1000px) {
+  .homeBackground {
+  background: url("../../images/mobileBackground1.png")  top left; 
+  position: fixed;
+  height: 100vh; 
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+}
+
+.nameHeading {
+  text-align: left; 
+  color: white;
+  font-size: 3rem; 
+}
+
+@media (max-width: 768px) {
+  .nameHeading {
+    font-size: 2rem;
+  }
+}
+
 .intro {
   text-align:left;
   color:white;
@@ -8,6 +40,12 @@
   width:600px; 
   font-family: 'Noto Sans Mono', monospace;
   display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    width: 300px;
+  }
 }
 
 .downloadCvButton {
@@ -19,13 +57,20 @@
   border: none;
   display: block;
 }
-.quote{
+
+.quote {
   margin-right: 150px;
   padding-left: 10px;
   color: white;
   font-size: 22pt;
   font-weight: bolder;
   float: right;
+}
+
+@media (max-width: 1200px) {
+  .quote {
+    display: none;
+  }
 }
 
 

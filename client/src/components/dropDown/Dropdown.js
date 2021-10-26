@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Dropdown.css';
 import { Link } from 'react-router-dom';
-import Color from '../../ColorPicking/Color';
+import Color from '../ColorPicking/Color';
+
 
 
 function Dropdown(props) {

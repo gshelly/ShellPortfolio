@@ -13,13 +13,23 @@ const NavSideBar = (props) => {
   }
   useEffect(() => {
     props.setSelectedColor(selectedColor)
+    setSelectedColor(selectedColor)
     props.setVisiblityCheck(visiblityCheck)
     props.setToggleNewColor(toggleNewColor)
   }, [props, selectedColor, visiblityCheck, toggleNewColor])
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Sidebar 
+        isOpen={isOpen} 
+        toggle={toggle} 
+        setSelectedColor={setSelectedColor} 
+        selectedColor={selectedColor} 
+        visiblityCheck={visiblityCheck} 
+        setVisiblityCheck={setVisiblityCheck}
+        toggleNewColor={toggleNewColor} 
+        setToggleNewColor={setToggleNewColor} 
+        />
       <Navbar 
         toggle = {toggle} 
         setSelectedColor={setSelectedColor} 
@@ -29,7 +39,6 @@ const NavSideBar = (props) => {
         toggleNewColor={toggleNewColor} 
         setToggleNewColor={setToggleNewColor} 
         />
-        {console.log("tt",toggleNewColor)}
     </>
   )
 }

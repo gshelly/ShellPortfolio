@@ -6,49 +6,38 @@ import CheckIcon from '@mui/icons-material/Check';
 export default function Color(props) {
   const [visiblityCheck, setVisiblityCheck] = useState(props.visiblityCheck)
   const [selectedColor, setSelectedColor] = useState(props.selectedColor )
-  // const [toggleNewColor, setToggleNewColor] = useState(props.toggleNewColor)
-  // let color = "red"
+
   useEffect(() => {
     props.setSelectedColor(selectedColor)
     props.setVisiblityCheck(visiblityCheck)
-    // props.setToggleNewColor(toggleNewColor)
   }, [props, selectedColor, visiblityCheck])
 
 
-  const ColorPallete = styled.button.attrs((props: { color: String }) => props)`
+  const ColorPallete = styled.button`
   width: 20px;
   height:20px;
-  background:${(props) => props.color};
+  background:${({color}) => color};
   border-radius: 10px;
   margin: 0px 5px;
   position:relative;
   border: 1px solid black;
   &:hover {
      border: 1px solid white;
-    //  width: 17px;
-    //  height:17px;
-    //  border-radius: 8.5px;
     }
   `
 
   const ColorPickerView = styled.div`
   display: flex;
   justify-content: space-between;
-
   padding:7px;
   margin:10px; 
   background:${selectedColor};
   color: white;
   border-radius: 5px;
  
-  // &:hover {
-  //   width: 200px;
-  //   &:hover ${ColorPallete} {
-  //     background: red;
-  //     display:inline-block;
-  //     position:fixed;
-  //   }
-  // }
+  @media screen and (max-width: 768px) {
+    margin-left: -30px;
+  }
   `
   const checkIconStyling = {
     color: "white",

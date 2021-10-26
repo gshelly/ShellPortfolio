@@ -22,7 +22,7 @@ const PageTransition = (props) => {
     position: relative;
     height: 0vh;
     display: block;
-    animation: 1s ease-in 0s 1 ${slideInFromLeft};
+    animation: 0.8s ease-in 0s 1 ${slideInFromLeft};
   `;
 
   return (

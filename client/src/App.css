@@ -6,53 +6,8 @@ body {
   padding: 0;
   /* font-family: 'Overpass', sans-serif; */
   font-family: 'Domine', serif;
-}
-
-/* DEMO STYLES */
-/* .nav {
-  padding: 30px 0;
-  background-color: #222;
-}
-.nav a {
-  display: inline-block;
-  width: 100px;
-  text-align: center;
-  margin: 0 15px;
-  padding: 10px;
-  border: 1px rgba(255,255,255,0.5) solid;
-  transition: all 0.3s linear;
-  text-decoration: none;
-  color: white;
-}
-.nav a.active {
-  background-color: #61DAFB;
-  color: #222;
-}
-section {
-  padding: 50px 0;
-  max-width: 600px;
-  margin: 0 auto;
-} */
-
-.homeBackground {
-  background: url("./images/background1.png") center top; 
-  height: 100vh; 
-  width: 100vw;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: fixed;
-}
-
-@media (max-width: 768px) {
-  .homeBackground {
-    background: url("./images/mobileBackground1.png")  top left; 
-  /* background: url("./images/background1.png") center top; 
-  height: 100vh; 
-  width: 100vw;
-  background-size: 100% 100%;
-  background-repeat: no-repeat; */
-  position: relative;
-  }
+  /* background-color: black; */
+  /* position: fixed; */
 }
 
 /* simple - enter transition 300ms, exit 150ms */

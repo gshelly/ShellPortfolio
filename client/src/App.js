@@ -6,7 +6,6 @@ import About from './pages/about';
 import Services from './pages/services';
 import Contact from './pages/contact';
 import NavSideBar from './pages/NavSideBar';
-import Color from './ColorPicking/Color'
 
 function App(props) {
   const [selectedColor, setSelectedColor] = useState("#33B18A")
