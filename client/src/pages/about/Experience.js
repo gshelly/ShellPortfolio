@@ -116,7 +116,7 @@ function Experience(props) {
 				</li>
 				<li>
 					<Title3>
-						<span style={{ paddingLeft: "15px" }}> Apr 2018 - Present</span>
+						<span style={{ paddingLeft: "15px" }}> Apr 2021 - Present</span>
 					</Title3>
 					<p
 						style={{

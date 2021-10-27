@@ -7,7 +7,8 @@ import {
 	Customization,
 	NavButton,
   NavBrand,
-  SocialNavMenu
+  SocialNavMenu,
+	NavBrandButton
 } from "./NavbarElements";
 
 import image from "../../images/logo.png";
@@ -55,13 +56,13 @@ const Navbar = (props) => {
 	return (
 		<>
 			<Nav>
-				<NavLink to="/">
+				<NavBrandButton onClick={() => handleNavigate("")}>
           {/* Shelly Gupta */}
 					<NavBrand
 						src={image}
 						alt="logo"
 					/>
-				</NavLink>
+				</NavBrandButton>
 				<Bars onClick={toggle} />
 				<NavMenu>
 					<NavButton

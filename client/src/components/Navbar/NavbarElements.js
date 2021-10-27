@@ -27,6 +27,19 @@ export const NavLink = styled(Link)`
 	}
 `;
 
+export const NavBrandButton = styled.button`
+	color: #fff;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	`;
+
 export const NavBrand = styled.img`
 	width: 400px;
 	height: 230px;
