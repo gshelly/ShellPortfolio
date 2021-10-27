@@ -3,9 +3,12 @@ import PageTransition from "../../components/PageTransition/PageTransition";
 import "./about.css";
 import "../../App.css";
 import profilePic from "../../images/profilePic3.jpg";
+import Experience from "./Experience";
+import Skills from "./Skills";
 
-const About = (props) => {
+export default function About(props) {
 	let { selectedColor } = props;
+
 	return (
 		<div style={{ backgroundColor: "black" }}>
 			{props.toggleNewColor ? (
@@ -25,7 +28,6 @@ const About = (props) => {
 						About Me
 					</h1>
 				</div>
-
 				<div className="container1">
 					<div class="img-hover-zoom">
 						<img
@@ -47,24 +49,22 @@ const About = (props) => {
 							fast-paced and ever-changing environment of software development.
 							Bringing the technical and visual aspects of digital products to
 							life is my passion.
-              <br/> <br/>
-              I am a keen young developer who is inspired and motivated by the
+							<br /> <br />
+							I am a keen young developer who is inspired and motivated by the
 							fast-paced and ever-changing environment of software development.
 							Bringing the technical and visual aspects of digital products to
 							life is my passion.
-              <br/> <br/>
-              I am a keen young developer who is inspired and motivated by the
-							fast-paced and ever-changing environment of software development.
-							Bringing the technical and visual aspects of digital products to
-							life is my passion.
+							<br /> <br />I am a keen young developer who is inspired and
+							motivated by the fast-paced and ever-changing environment of
+							software development. Bringing the technical and visual aspects of
+							digital products to life is my passion.
 						</p>
 					</div>
 				</div>
-        <div>
-        </div>
+				{/*  End of container1 */}
+				<Experience selectedColor={selectedColor} />
+        <Skills selectedColor={selectedColor} />
 			</div>
 		</div>
 	);
-};
-
-export default About;
+}

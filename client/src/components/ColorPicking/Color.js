@@ -52,7 +52,7 @@ export default function Color(props) {
     // setToggleNewColor(false)
     props.setSelectedColor(colorValue)
     props.setVisiblityCheck({ [name]: true })
-    // props.setToggleNewColor(false)
+      // props.setToggleNewColor(false)
   }
 
   return (
