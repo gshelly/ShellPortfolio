@@ -83,7 +83,7 @@ function Experience(props) {
 					>
 						<span>Associate Software Engineer (iOS App Development)</span>
 						<span style={{ color: selectedColor }}> - Accenture </span>
-						<p style={{ width: "500px", marginBottom: "0px" }}>
+						<p className="exp-desc">
 							{" "}
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
 							tempora perferendis vero officia enim impedit voluptatem
@@ -105,7 +105,7 @@ function Experience(props) {
 					>
 						<span>Consultant (iOS App Development)</span>
 						<span style={{ color: selectedColor }}> - Deloitte </span>
-						<p style={{ width: "500px" }}>
+						<p className="exp-desc">
 							{" "}
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
 							tempora perferendis vero officia enim impedit voluptatem
@@ -126,7 +126,7 @@ function Experience(props) {
 						}}
 					>
 						<span>Currently working on MERN</span>
-						<p style={{ width: "500px" }}>
+						<p className="exp-desc">
 							{" "}
 							Upgrading my skills in, and understanding of MERN(MongoDB, Express
 							js, React js, Node js). This Website has been developed by myself

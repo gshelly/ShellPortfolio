@@ -39,9 +39,8 @@ export default function About(props) {
 					</div>
 					<div className="wrapper">
 						<h1>
-							{" "}
 							Hello, I'm{" "}
-							<spans style={{ color: selectedColor }}>Shelly Gupta </spans>{" "}
+							<spans style={{ color: selectedColor }}>Shelly Gupta </spans>
 						</h1>
 						<p>
 							{" "}
@@ -63,7 +62,7 @@ export default function About(props) {
 				</div>
 				{/*  End of container1 */}
 				<Experience selectedColor={selectedColor} />
-        <Skills selectedColor={selectedColor} />
+				<Skills selectedColor={selectedColor} />
 			</div>
 		</div>
 	);

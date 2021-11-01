@@ -20,25 +20,39 @@ import styled from "styled-components";
 function Skills(props) {
 	let { selectedColor } = props;
 
-  const OtherSkills = styled.h5`
-  color: ${selectedColor};
-  margin: 0px 0px 0px -10px;
-  display: inline-block;
+	const OtherSkills = styled.h5`
+		color: ${selectedColor};
+		margin: 0px 0px 0px -10px;
+		display: inline-block;
 
-  &:before {
-    content: ".";
-    background-color: ${selectedColor};
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: inline-block;
-    text-align: center;
-    color: ${selectedColor};
-    line-height: 10px;
-    /* margin-top: 10px; */
-    /* margin-top: 30px; */
-  }
-`;
+		&:before {
+			content: ".";
+			background-color: ${selectedColor};
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			display: inline-block;
+			text-align: center;
+			color: ${selectedColor};
+			line-height: 10px;
+			/* margin-top: 10px; */
+			/* margin-top: 30px; */
+		}
+	`;
+
+	const OtherSkillsType = styled.p`
+		display: inline-block;
+		padding: 10px 40px;
+		margin: 0px -2px;
+		border-bottom: 3px solid ${selectedColor};
+
+		@media screen and (max-width: 768px) {
+			display: block;
+			border: none;
+			border-left: 3px solid ${selectedColor};
+			margin: 0px 0px -10px 10px;
+		}
+	`;
 
 	return (
 		<div className="skills">
@@ -51,7 +65,7 @@ function Skills(props) {
 			>
 				Programming Skills and Tools
 			</h2>
-			<div style={{ marginLeft: "40px" }}>
+			<div className="skills-container">
 				<h3 style={{ color: selectedColor }}>
 					{" "}
 					My Toolbox and Things I Can Do{" "}
@@ -62,166 +76,98 @@ function Skills(props) {
 					life:{" "}
 				</p>
 
-				<table style={{ border: "none" }}>
-					<tbody>
-						<tr>
-							<td className="section-skill-tools">
-								<FaSwift
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">Swift</p>
-							</td>
-							<td className="section-skill-tools">
-								<FaApple
-									color={selectedColor}
-									style={{ width: "90px", height: "80px" }}
-								/>
-								<p className="name" style={{ width: "107px" }}>
-									Objective-C
-								</p>
-							</td>
-							<td className="section-skill-tools">
-								<DiMongodb
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">MongoDB</p>
-							</td>
-							<td
-								className="section-skill-tools"
-								style={{ paddingTop: "40px" }}
-							>
-								<div style={{ display: "flex" }}>
-									<span
-										style={{
-											color: selectedColor,
-											fontSize: "1.2rem",
-											paddingTop: "30px",
-										}}
-									>
-										Express
-									</span>
-									<SiJavascript
-										color={selectedColor}
-										style={{ width: "50px", height: "50px" }}
-									/>
-								</div>
-								<p className="name">Express Js</p>
-							</td>
-							<td className="section-skill-tools">
-								<FaReact
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">React JS</p>
-							</td>
-							<td className="section-skill-tools">
-								<FaNodeJs
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">Node js</p>
-							</td>
-						</tr>
+				<div className="container-icons">
+					<div className="box-icon">
+						<FaSwift color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>Swift</p>
+					</div>
 
-						<tr style={{ marginTop: "180px" }}>
-							<td className="section-skill-tools">
-								<FaHtml5
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">HTML</p>
-							</td>
-							<td className="section-skill-tools">
-								<FaCss3
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">CSS</p>
-							</td>
-							<td className="section-skill-tools">
-								<SiJavascript
-									color={selectedColor}
-									style={{ width: "80px", height: "70px" }}
-								/>
-								<p className="name" style={{ paddingLeft: "0px" }}>
-									JavaScript
-								</p>
-							</td>
-							<td className="section-skill-tools">
-								<SiJquery
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">Jquery</p>
-							</td>
-							<td className="section-skill-tools">
-								<SiC
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">C</p>
-							</td>
-							<td className="section-skill-tools">
-								<CgCPlusPlus
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name" style={{ paddingLeft: "0px" }}>
-									C++
-								</p>
-							</td>
-						</tr>
+					<div className="box-icon">
+						<FaApple color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>Objective-C</p>
+					</div>
 
-						<tr style={{ marginTop: "180px" }}>
-							<td className="section-skill-tools">
-								<FaGit
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">Git</p>
-							</td>
-							<td className="section-skill-tools">
-								<FaGithub
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">Github</p>
-							</td>
-							<td className="section-skill-tools">
-								<FaJenkins
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">Jenkins</p>
-							</td>
-							<td className="section-skill-tools">
-								<FaJira
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">Jira</p>
-							</td>
-							<td className="section-skill-tools">
-								<SiXcode
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">Xcode</p>
-							</td>
-							<td className="section-skill-tools">
-								<DiResponsive
-									color={selectedColor}
-									style={{ width: "80px", height: "80px" }}
-								/>
-								<p className="name">Responsive Website</p>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+					<div className="box-icon">
+						<DiMongodb color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>MongoDB</p>
+					</div>
+
+					<div className="box-icon">
+						<span
+							style={{
+								color: selectedColor,
+								fontSize: "1rem",
+								// marginBottom: "60px",
+							}}
+						>
+							Express
+						</span>
+						<SiJavascript color={selectedColor} style={{ fontSize: "60px" }} />
+						<p style={{ margin: "30px 0px 0px 0px" }}>Express Js</p>
+					</div>
+
+					<div className="box-icon">
+						<FaReact color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>React JS</p>
+					</div>
+
+					<div className="box-icon">
+						<FaNodeJs color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>Node js</p>
+					</div>
+
+					<div className="box-icon">
+						<FaHtml5 color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>HTML</p>
+					</div>
+					<div className="box-icon">
+						<FaCss3 color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>CSS</p>
+					</div>
+					<div className="box-icon">
+						<SiJavascript color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>JavaScript</p>
+					</div>
+					<div className="box-icon">
+						<SiJquery color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>Jquery</p>
+					</div>
+					<div className="box-icon">
+						<SiC color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>C</p>
+					</div>
+					<div className="box-icon">
+						<CgCPlusPlus color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>C++</p>
+					</div>
+					<div className="box-icon">
+						<FaGit color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>Git</p>
+					</div>
+					<div className="box-icon">
+						<FaGithub color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>Github</p>
+					</div>
+
+					<div className="box-icon">
+						<FaJenkins color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>Jenkins</p>
+					</div>
+					<div className="box-icon">
+						<FaJira color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>Jira</p>
+					</div>
+					<div className="box-icon">
+						<SiXcode color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>Xcode</p>
+					</div>
+					<div className="box-icon">
+						<DiResponsive color={selectedColor} style={{ fontSize: "80px" }} />
+						<p>Responsive Website</p>
+					</div>
+				</div>
 			</div>
-      <h2
+			<h2
 				style={{
 					border: `3px solid #555555`,
 					padding: "10px",
@@ -230,54 +176,18 @@ function Skills(props) {
 			>
 				Other Skills/Hobbies
 			</h2>
-      <div className="other-skills">
-      <OtherSkills/>
-					<p
-						style={{
-							padding: "10px 40px",
-							margin: "0px -2px",
-							borderBottom: `3px solid ${selectedColor}`,
-              display: "inline-block"
-						}}
-					>
-					Dancing
-					</p>
-          <OtherSkills />
-					<p
-						style={{
-							padding: "10px 40px",
-							margin: "0px -2px",
-							borderBottom: `3px solid ${selectedColor}`,
-              display: "inline-block"
-						}}
-					>
-					Travelling
-					</p>
+			<div className="other-skills">
+				<OtherSkills />
+				<OtherSkillsType>Dancing</OtherSkillsType>
+				<OtherSkills />
+				<OtherSkillsType>Travelling</OtherSkillsType>
 
-          <OtherSkills />
-					<p
-						style={{
-							padding: "10px 40px",
-							margin: "0px -2px",
-							borderBottom: `3px solid ${selectedColor}`,
-              display: "inline-block"
-						}}
-					>
-					Cooking
-					</p>
+				<OtherSkills />
+				<OtherSkillsType>Cooking</OtherSkillsType>
 
-          <OtherSkills />
-					<p
-						style={{
-							padding: "10px 40px",
-							margin: "0px -2px",
-							borderBottom: `3px solid ${selectedColor}`,
-              display: "inline-block"
-						}}
-					>
-					Yoga
-					</p>
-          </div>
+				<OtherSkills />
+				<OtherSkillsType>Yoga</OtherSkillsType>
+			</div>
 		</div>
 	);
 }

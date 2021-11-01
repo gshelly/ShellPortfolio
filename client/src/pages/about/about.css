@@ -34,12 +34,39 @@ h1.title {
   border-radius: 2px;
   /* margin-top: -20px; */
 }
+@media (max-width: 1000px) {
+  .container1 {
+    display: block;
+    margin: 150px;
+  }
+ }
+
+@media (max-width: 768px) {
+  .container1 {
+    display: block;
+    margin: 20px;
+  }
+ }
 
 .pic {
   width: 500px;
   height:500px;
   transition: transform .5s ease;
 }
+
+@media (max-width: 768px) {
+  .img-hover-zoom {
+    width: auto;
+    height: auto;
+  }
+ }
+
+@media (max-width: 768px) {
+  .pic {
+    width: 96%;
+    height: auto;
+  }
+ }
 
 .img-hover-zoom:hover img {
   transform: scale(1.5);
@@ -50,10 +77,34 @@ h1.title {
   width: 50%;
 }
 
+@media (max-width: 1000px) {
+  .wrapper {
+    width: auto;
+    padding-top: 10px;
+  }
+ }
+
  /* experience */
 
  .experience {
    margin: 110px;
+ }
+
+ @media (max-width: 768px) {
+  .experience {
+    margin: 20px;
+  }
+ }
+
+ .exp-desc {
+   width: 500px;
+ }
+
+ @media (max-width: 768px) {
+  .exp-desc {
+    width: auto;
+    margin: 10px;
+  }
  }
 
  /* Skills */
@@ -61,11 +112,16 @@ h1.title {
  .skills {
   margin-left: 110px;
  }
-
- .name {
-   margin: 0px;
-   padding-left: 20px;
+ @media (max-width: 768px) {
+  .skills {
+    margin: 20px;
+  }
  }
+
+ .skills-container {
+  margin-left: 0px;
+ }
+
  .section-skill-tools {
   padding: 10px 110px 50px 0px;
  }
@@ -73,3 +129,41 @@ h1.title {
  .other-skills {
    padding: 10px 0px 50px 40px;
  }
+
+.container-icons {
+ text-align: center;
+ margin-bottom: 3rem;
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-orient: horizontal;
+ -webkit-box-direction: normal;
+ -ms-flex-direction: row;
+ flex-direction: row;
+ -ms-flex-wrap: wrap;
+ flex-wrap: wrap;
+ margin-left: -10px;
+}
+
+.container-icons .box-icon {
+  width: 15%;
+  height: 142px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+  .container-icons .box-icon {
+    width: 30%;
+    height: 142px;
+    margin-bottom: 10px;
+  }
+ } 
+
+ @media (max-width: 768px) {
+  .container-icons .box-icon {
+    width: 50%;
+    height: 142px;
+    margin-bottom: 10px;
+  }
+ } 
+
