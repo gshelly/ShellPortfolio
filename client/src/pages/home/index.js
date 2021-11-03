@@ -3,6 +3,7 @@ import "../../App.css";
 import "./style.css";
 import styled, { keyframes } from "styled-components";
 import HomePageTransition from "../../components/PageTransition/HomePageTransition";
+import resume from "../../components/Resume/resume.pdf"
 
 const Home = (props) => {
 	const slideInFromLeft = keyframes`
@@ -46,13 +47,17 @@ const Home = (props) => {
           <Transition1  style={{borderLeft:`3px solid ${props.selectedColor}`}} className="quote">Be Creative and fun</Transition1> 
          : <blockquote  style={{borderLeft:`3px solid ${props.selectedColor}`}} className="quote">Be Creative and fun</blockquote>
          }
+				 <a href={resume} download="Shelly-Resume" target='_blank' rel="noreferrer" style={{textDecoration: "none"}}>
 					<button
 						style={{ backgroundColor: props.selectedColor }}
 						className="downloadCvButton"
+						onClick={`window.open(${resume})`}
 					>
 						{" "}
 						Download CV
 					</button>
+					</a>
+
 				</div>
 			</div>
 		</>
