@@ -6,11 +6,26 @@
   margin: 30px 140px;
 }
 
+@media (max-width: 1200px) {
+  .main-container {
+    margin: 30px 50px;
+  }
+ }
+
 .project-header {
   background-color: transparent;
   text-align: center;
-  margin-bottom: 40px;
 }
+
+@media (max-width: 1000px) {
+  .project-header h2 {
+    font-size: 18px;
+  }
+
+  .project-header h5 {
+    font-size: 12px;
+  }
+ }
 
 .container-work {
   display: flex;
@@ -18,15 +33,17 @@
 }
 
 .container-text {
-  flex:4;
+  flex:3;
   margin: 30px;
 }
 
 .container-img {
-  flex: 2;
-  display: flex;
-  justify-content: space-between;
+  flex: 1;
   margin: 30px;
+}
+
+.container-img img {
+  width: 500px;
 }
 
 .view-button {
@@ -37,6 +54,48 @@
   font-size: 14px;
   font-weight: bold;
 }
+
+.view-button:hover {
+  border-radius: 5px;
+}
+
+@media (max-width: 1300px) {
+  .container-img img {
+    width: 300px;
+  }
+  .container-text {
+    margin: 0px;
+  }
+
+  .view-button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-work {
+    display: block;
+  }
+
+  .container-img {
+    margin: 0px auto;
+  }
+
+  .container-img img {
+    width: 280px;
+  }
+
+  .container-text {
+    margin: 0px;
+  }
+
+  .view-button {
+    padding: 10px;
+    font-size: 12px;
+  }
+}
+
+
 
 .container-work:nth-child(odd) .container-text {
   order: -1;

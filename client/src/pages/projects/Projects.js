@@ -1,13 +1,18 @@
 import React from "react";
 import PageTransition from "../../components/PageTransition/PageTransition";
 import "./Project.css";
-import { MdLaptopMac } from "react-icons/md";
-import { IoIosPhonePortrait } from "react-icons/io";
-import project2 from "../../images/Project2.png";
+import project2 from "../../images/P2.png";
 import project3 from "../../images/Project3.png";
 import project1 from "../../images/Project1.png";
-import { FaReact, FaHtml5, FaCss3 } from "react-icons/fa";
+import { 
+  FaReact, 
+  FaHtml5, 
+  FaCss3, 
+  FaNodeJs,
+  FaBootstrap
+ } from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
+import { DiMongodb } from "react-icons/di";
 
 const Services = (props) => {
 	let { selectedColor } = props;
@@ -20,18 +25,24 @@ const Services = (props) => {
 				<div className="project-header">
 					<h2
 						style={{
-							display: "inline",
+							display: "inline-block",
 							borderBottom: `3px solid ${selectedColor}`,
 							paddingBottom: "20px",
+              margin: "0px"
 						}}
 					>
 						{" "}
 						Personal MERN projects built within 6 months of learning it.
 					</h2>
+					<h5>
+						{" "}
+						(Industries projects are not listed here which are built using Swift
+						and Objective-C.)
+					</h5>
 				</div>
 				<div className="container-work">
-        <div className="container-img">
-						<img src={project1} alt="p1" style={{ width:"500px" }} />
+					<div className="container-img">
+						<img src={project1} alt="p1" />
 					</div>
 					<div className="container-text">
 						<h2 style={{ color: selectedColor }}> Personal Website </h2>
@@ -76,8 +87,8 @@ const Services = (props) => {
 				</div>{" "}
 				{/* project1  */}
 				<div className="container-work">
-        <div className="container-img">
-						<img src={project2} alt="p1" style={{ width: "600px" }} />
+					<div className="container-img">
+						<img src={project2} alt="p2" />
 					</div>
 					<div className="container-text">
 						<h2 style={{ color: selectedColor }}> Stumble On Celluloids </h2>
@@ -89,12 +100,15 @@ const Services = (props) => {
 						</p>
 						<div style={{ display: "flex", justifyContent: "flex-start" }}>
 							<FaReact style={{ fontSize: "20px", margin: "0px 10px" }} />
+              <DiMongodb style={{ fontSize: "20px", margin: "0px 10px" }} />
+              <FaNodeJs style={{ fontSize: "20px", margin: "0px 10px" }} />
+              <FaBootstrap style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<FaHtml5 style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<FaCss3 style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<SiJavascript style={{ fontSize: "20px", margin: "0px 10px" }} />
 						</div>
 						<div>
-							<a href="https://github.com/gshelly/ShellPortfolio">
+							<a href="https://github.com/gshelly/stumbleOnCelluloid">
 								<button
 									className="view-button"
 									style={{
@@ -105,7 +119,7 @@ const Services = (props) => {
 									View It Here{" "}
 								</button>
 							</a>
-							<a href="https://github.com/gshelly/ShellPortfolio">
+							<a href="https://github.com/gshelly/stumbleOnCelluloid">
 								<button
 									className="view-button"
 									style={{
@@ -120,10 +134,9 @@ const Services = (props) => {
 						</div>
 					</div>
 				</div>
-
-        <div className="container-work">
-        <div className="container-img">
-						<img src={project3} alt="p1" style={{ width: "500px" }} />
+				<div className="container-work">
+					<div className="container-img">
+						<img src={project3} alt="p3" />
 					</div>
 					<div className="container-text">
 						<h2 style={{ color: selectedColor }}> Rejuvenating You </h2>
@@ -135,12 +148,15 @@ const Services = (props) => {
 						</p>
 						<div style={{ display: "flex", justifyContent: "flex-start" }}>
 							<FaReact style={{ fontSize: "20px", margin: "0px 10px" }} />
+              <DiMongodb style={{ fontSize: "20px", margin: "0px 10px" }} />
+              <FaNodeJs style={{ fontSize: "20px", margin: "0px 10px" }} />
+              <FaBootstrap style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<FaHtml5 style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<FaCss3 style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<SiJavascript style={{ fontSize: "20px", margin: "0px 10px" }} />
 						</div>
 						<div>
-							<a href="https://github.com/gshelly/ShellPortfolio">
+							<a href="https://github.com/gshelly/RejuvenatingYou">
 								<button
 									className="view-button"
 									style={{
@@ -151,7 +167,7 @@ const Services = (props) => {
 									View It Here{" "}
 								</button>
 							</a>
-							<a href="https://github.com/gshelly/ShellPortfolio">
+							<a href="https://github.com/gshelly/RejuvenatingYou">
 								<button
 									className="view-button"
 									style={{
