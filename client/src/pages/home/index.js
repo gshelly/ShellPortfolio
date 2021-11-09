@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../App.css";
 import "./style.css";
 import styled, { keyframes } from "styled-components";
 import HomePageTransition from "../../components/PageTransition/HomePageTransition";
-import resume from "../../components/Resume/resume.pdf"
+import resume from "../../components/Resume/resume.pdf";
+import { useHistory } from "react-router-dom";
 
 const Home = (props) => {
+	let history = useHistory();
 	const slideInFromLeft = keyframes`
     0% {
       transform: translateX(40%);
@@ -17,6 +19,11 @@ const Home = (props) => {
 	const Transition1 = styled.blockquote`
 		animation: ${slideInFromLeft} 1s ease-in 1s 1;
 	`;
+
+	const navigateContact = () => {
+		props.setToggleNewColor(true);
+		history.push("/contact-us");
+	};
 
 	return (
 		<>
@@ -31,10 +38,18 @@ const Home = (props) => {
 					</h1>
 					{/* <div> */}
 					<p className="intro">
-						I am a keen young developer who is inspired and motivated by the
-						fast-paced and ever-changing environment of software development.
-						Bringing the technical and visual aspects of digital products to
-						life is my passion.
+						I am full-stack web developer and an iOS App developer living in San
+						Jose, CA. I have worked on iPhone App projects for clients, now I am
+						working on upgrading my skill set by developing projects using
+						MERN(MongoDb, React js, Node js, Express js) If you're looking for
+						an employee to hire, please get in touch{" "}
+						<button
+							onClick={navigateContact}
+							className="contactLink"
+							style={{ color: props.selectedColor }}
+						>
+							here
+						</button>
 					</p>
 					{/* <blockquote
 						style={{ borderLeft: `3px solid ${props.selectedColor}` }}
@@ -42,22 +57,37 @@ const Home = (props) => {
 					>
 						Be Creative and fun
 					</blockquote> */}
-					{
-          props.toggleNewColor ? 
-          <Transition1  style={{borderLeft:`3px solid ${props.selectedColor}`}} className="quote">Be Creative and fun</Transition1> 
-         : <blockquote  style={{borderLeft:`3px solid ${props.selectedColor}`}} className="quote">Be Creative and fun</blockquote>
-         }
-				 <a href={resume} download="Shelly-Resume" target='_blank' rel="noreferrer" style={{textDecoration: "none"}}>
-					<button
-						style={{ backgroundColor: props.selectedColor }}
-						className="downloadCvButton"
-						onClick={`window.open(${resume})`}
+					{props.toggleNewColor ? (
+						<Transition1
+							style={{ borderLeft: `3px solid ${props.selectedColor}` }}
+							className="quote"
+						>
+							Be Creative and fun
+						</Transition1>
+					) : (
+						<blockquote
+							style={{ borderLeft: `3px solid ${props.selectedColor}` }}
+							className="quote"
+						>
+							Be Creative and fun
+						</blockquote>
+					)}
+					<a
+						href={resume}
+						download="Shelly-Resume"
+						target="_blank"
+						rel="noreferrer"
+						style={{ textDecoration: "none" }}
 					>
-						{" "}
-						Download CV
-					</button>
+						<button
+							style={{ backgroundColor: props.selectedColor }}
+							className="downloadCvButton"
+							onClick={`window.open(${resume})`}
+						>
+							{" "}
+							Download CV
+						</button>
 					</a>
-
 				</div>
 			</div>
 		</>

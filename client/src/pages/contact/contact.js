@@ -13,6 +13,11 @@ import SocialMobile from "../../components/Social/SocialMobile";
 const Contact = (props) => {
 	let { selectedColor } = props;
 	const form = useRef();
+	const [email, setEmail] = useState("");
+	const [userName, setUserName] = useState("");
+	const [message, setMessage] = useState("");
+	const [err, setErr] = useState({});
+	const [isShow, setShow] = useState(true);
 
 	const useStyles = makeStyles((theme) => ({
 		root: {
@@ -69,13 +74,7 @@ const Contact = (props) => {
 			},
 		},
 	}));
-
 	const classes = useStyles();
-	const [email, setEmail] = useState("");
-	const [userName, setUserName] = useState("");
-	const [message, setMessage] = useState("");
-	const [err, setErr] = useState({});
-	const [isShow, setShow] = useState(true);
 
 	function validate(name, email, message) {
 		const errors = {};
@@ -132,6 +131,7 @@ const Contact = (props) => {
 	};
 
 	const changeNameEvent = (e) => {
+		e.preventDefault();
 		setShow(false);
 		setUserName(e.target.value);
 		let errors = validate(e.target.value, email, message);
@@ -157,7 +157,7 @@ const Contact = (props) => {
 			{isShow && props.toggleNewColor ? (
 				<PageTransition selectedColor={selectedColor} />
 			) : null}
-			<div>
+			<div className="wrapper-contactus">
 				<div className="header">
 					<h4 style={{ color: selectedColor }} className="title">
 						{" "}

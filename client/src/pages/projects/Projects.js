@@ -32,7 +32,7 @@ const Services = (props) => {
 						}}
 					>
 						{" "}
-						Personal MERN projects built within 6 months of learning it.
+						Personal MERN projects built within 2 months of learning it.
 					</h2>
 					<h5>
 						{" "}
