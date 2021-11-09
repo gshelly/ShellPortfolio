@@ -4,7 +4,7 @@ import {Switch, Route, Redirect } from 'react-router-dom';
 import Home from './pages/home/index';
 import About from "./pages/about/About"
 import Services from './pages/projects/Projects';
-import Contact from './pages/contact';
+import Contact from './pages/contact/contact';
 import NavSideBar from './pages/NavSideBar';
 
 function App(props) {

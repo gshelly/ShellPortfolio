@@ -57,6 +57,9 @@
   border: none;
   display: block;
 }
+.downloadCvButton:hover {
+  border-radius: 5px;
+}
 
 .quote {
   margin-right: 180px;

@@ -1,0 +1,60 @@
+
+
+.header {
+  background-color: transparent;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+h1.title {
+  font-size: 30px;
+  display: inline;
+  padding: 0px 15px 20px 15px;
+}
+
+.swal-text {
+  font-size: 14px;
+}
+
+.swal-button {
+  padding: 7px 39px;
+  border-radius: 2px;
+  background-color: #33B18A;
+  font-size: 15px;
+  color: black;
+  border: 1px solid #206952;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+  margin-left: 130px;
+}
+
+.swal-footer {
+  margin: 0px;
+}
+.swal-modal {
+ background-color: #92afa6;
+}
+
+.swal-icon--success:after, .swal-icon--success:before {
+  position: relative;
+  width: 0px;
+  height: 0px;
+}
+.swal-icon--success__hide-corners {
+  height: 0px;
+  width: 0px;
+  background-color: transparent;
+}
+
+.SocialLink {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .SocialLink {
+  display: block;
+  }
+}
