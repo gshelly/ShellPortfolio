@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import './App.css';
 import {Switch, Route, Redirect } from 'react-router-dom';
 import Home from './pages/home/index';
-import About from "./pages/about/About"
+import About from "./pages/about/about"
 import Services from './pages/projects/Projects';
 import Contact from './pages/contact/contact';
 import NavSideBar from './pages/NavSideBar';
