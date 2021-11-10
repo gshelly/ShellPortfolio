@@ -23,7 +23,7 @@ export default function Color(props) {
 			border: 1px solid white;
 		}
 		@media screen and (max-width: 768px) {
-      margin: 0px 3px;
+      height: 21px;
 		}
 	`;
 
@@ -38,7 +38,6 @@ export default function Color(props) {
 
 		@media screen and (max-width: 768px) {
 			margin-left: -50px;
-      padding: 3px;
 		}
 	`;
 	const checkIconStyling = {
