@@ -23,7 +23,7 @@ export default function Color(props) {
 			border: 1px solid white;
 		}
 		@media screen and (max-width: 768px) {
-      height: 21px;
+      border-radius: 12px;
 		}
 	`;
 
