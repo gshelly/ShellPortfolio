@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
 
 .homeBackground {
   background: url("../../images/background1.png") center top; 
@@ -12,7 +12,7 @@
 @media (max-width: 1000px) {
   .homeBackground {
   background: url("../../images/mobileBackground1.png")  top left; 
-  position: fixed;
+  position: relative;
   height: 100vh; 
   width: 100vw;
   background-size: cover;
