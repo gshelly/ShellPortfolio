@@ -84,7 +84,7 @@ const Navbar = (props) => {
 						selectedColor={selectedColor}
 						onClick={() => handleNavigate("contact-us")}
 					>
-						Contact Us
+						Contact Me
 					</NavButton>
 					<Customization
 						onMouseEnter={onMouseEnter}

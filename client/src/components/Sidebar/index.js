@@ -46,7 +46,7 @@ const Sidebar = (props) => {
             Projects
           </SidebarButton>
           <SidebarButton onClick={() => handleNavigate("contact-us")} selectedColor={selectedColor} >
-            Contact
+            Contact Me
           </SidebarButton>
         </SidebarMenu>
       </SidebarWrapper>

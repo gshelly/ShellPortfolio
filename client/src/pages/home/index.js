@@ -38,9 +38,9 @@ const Home = (props) => {
 					</h1>
 					{/* <div> */}
 					<p className="intro">
-						I am full-stack web developer and an iOS App developer living in San
+						I am a full-stack developer living in San
 						Jose, CA. I have worked on iPhone App projects for clients, now I am
-						working on upgrading my skill set by developing projects using
+						working on upgrading my skills set by developing projects using
 						MERN(MongoDb, React js, Node js, Express js) If you're looking for
 						an employee to hire, please get in touch{" "}
 						<button

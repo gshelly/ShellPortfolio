@@ -85,10 +85,10 @@ function Experience(props) {
 						<span style={{ color: selectedColor }}> - Accenture </span>
 						<p className="exp-desc">
 							{" "}
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-							tempora perferendis vero officia enim impedit voluptatem
-							dignissimos, veniam ratione est alias rerum aperiam, nam aliquam
-							reprehenderit iste dolor.
+							I began my career at Accenture. Over the course of three years, I
+							worked on both internal and client projects. A project I worked on
+							for Allstate involved developing an application and writing unit
+							test cases.
 						</p>
 					</p>
 				</li>
@@ -107,10 +107,11 @@ function Experience(props) {
 						<span style={{ color: selectedColor }}> - Deloitte </span>
 						<p className="exp-desc">
 							{" "}
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-							tempora perferendis vero officia enim impedit voluptatem
-							dignissimos, veniam ratione est alias rerum aperiam, nam aliquam
-							reprehenderit iste dolor.
+							Working at Deloitte has developed my leadership skills, sense of
+							responsibility and ability to maintain composure. I worked on
+							Casey's project and wrote the code for this project from scratch.
+							Early on, there were two iOS developers on the team, and later the
+							team grew.
 						</p>
 					</p>
 				</li>
@@ -128,9 +129,9 @@ function Experience(props) {
 						<span>Currently working on MERN</span>
 						<p className="exp-desc">
 							{" "}
-							Upgrading my skills in, and understanding of MERN(MongoDB, Express
-							js, React js, Node js). This Website has been developed by myself
-							using React js. Also having fun with animating things via css.
+							A certificate of completion of the MERN course was recently
+							received from the Coding Dojo. The current focus of my work is
+							creating React projects with end-to-end deployment.
 						</p>
 					</p>
 				</li>

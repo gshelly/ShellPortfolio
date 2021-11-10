@@ -4,13 +4,13 @@ import "./Project.css";
 import project2 from "../../images/P2.png";
 import project3 from "../../images/Project3.png";
 import project1 from "../../images/Project1.png";
-import { 
-  FaReact, 
-  FaHtml5, 
-  FaCss3, 
-  FaNodeJs,
-  FaBootstrap
- } from "react-icons/fa";
+import {
+	FaReact,
+	FaHtml5,
+	FaCss3,
+	FaNodeJs,
+	FaBootstrap,
+} from "react-icons/fa";
 import { SiJavascript } from "react-icons/si";
 import { DiMongodb } from "react-icons/di";
 
@@ -28,7 +28,7 @@ const Services = (props) => {
 							display: "inline-block",
 							borderBottom: `3px solid ${selectedColor}`,
 							paddingBottom: "20px",
-              margin: "0px"
+							margin: "0px",
 						}}
 					>
 						{" "}
@@ -47,10 +47,12 @@ const Services = (props) => {
 					<div className="container-text">
 						<h2 style={{ color: selectedColor }}> Personal Website </h2>
 						<p>
-							I am a keen young developer who is inspired and motivated by the
-							fast-paced and ever-changing environment of software development.
-							Bringing the technical and visual aspects of digital products to
-							life is my passion.
+							Coding for your own personal project is an extremely rewarding
+							experience. All aspects of this website were designed and
+							developed by me, including the logo, the wallpaper, the color
+							palette for changing colors, as well as the smooth animations and
+							component based coding. The website has been developed using React
+							JS and is responsive, as well.
 						</p>
 						<div style={{ display: "flex", justifyContent: "flex-start" }}>
 							<FaReact style={{ fontSize: "20px", margin: "0px 10px" }} />
@@ -93,16 +95,17 @@ const Services = (props) => {
 					<div className="container-text">
 						<h2 style={{ color: selectedColor }}> Stumble On Celluloids </h2>
 						<p>
-							I am a keen young developer who is inspired and motivated by the
-							fast-paced and ever-changing environment of software development.
-							Bringing the technical and visual aspects of digital products to
-							life is my passion.
+							The vision is to drive the sense of randomly discovering a movie
+							that you may or may not have seen.The feeling of randomly
+							stumbling onto a gem of a movie is what StubmbleOnCelluliod is all
+							about. Join the discussion with strangers across the world to
+							discover the fun of discussing a movie and knowing about it
 						</p>
 						<div style={{ display: "flex", justifyContent: "flex-start" }}>
 							<FaReact style={{ fontSize: "20px", margin: "0px 10px" }} />
-              <DiMongodb style={{ fontSize: "20px", margin: "0px 10px" }} />
-              <FaNodeJs style={{ fontSize: "20px", margin: "0px 10px" }} />
-              <FaBootstrap style={{ fontSize: "20px", margin: "0px 10px" }} />
+							<DiMongodb style={{ fontSize: "20px", margin: "0px 10px" }} />
+							<FaNodeJs style={{ fontSize: "20px", margin: "0px 10px" }} />
+							<FaBootstrap style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<FaHtml5 style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<FaCss3 style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<SiJavascript style={{ fontSize: "20px", margin: "0px 10px" }} />
@@ -141,16 +144,17 @@ const Services = (props) => {
 					<div className="container-text">
 						<h2 style={{ color: selectedColor }}> Rejuvenating You </h2>
 						<p>
-							I am a keen young developer who is inspired and motivated by the
-							fast-paced and ever-changing environment of software development.
-							Bringing the technical and visual aspects of digital products to
-							life is my passion.
+							Using this project, you can track your carb, protein, and fat
+							intake to rejuvenate yourself.With a pie chart, you
+							can more easily comprehend your daily diet chart.The user can
+							enter the food they ate for breakfast, lunch, and dinner and a pie
+							chart will be generated in response.
 						</p>
 						<div style={{ display: "flex", justifyContent: "flex-start" }}>
 							<FaReact style={{ fontSize: "20px", margin: "0px 10px" }} />
-              <DiMongodb style={{ fontSize: "20px", margin: "0px 10px" }} />
-              <FaNodeJs style={{ fontSize: "20px", margin: "0px 10px" }} />
-              <FaBootstrap style={{ fontSize: "20px", margin: "0px 10px" }} />
+							<DiMongodb style={{ fontSize: "20px", margin: "0px 10px" }} />
+							<FaNodeJs style={{ fontSize: "20px", margin: "0px 10px" }} />
+							<FaBootstrap style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<FaHtml5 style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<FaCss3 style={{ fontSize: "20px", margin: "0px 10px" }} />
 							<SiJavascript style={{ fontSize: "20px", margin: "0px 10px" }} />

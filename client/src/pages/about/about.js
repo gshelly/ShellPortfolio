@@ -44,19 +44,21 @@ export default function About(props) {
 						</h1>
 						<p>
 							{" "}
-							I am a keen young developer who is inspired and motivated by the
-							fast-paced and ever-changing environment of software development.
-							Bringing the technical and visual aspects of digital products to
-							life is my passion.
+							A curiosity-driven full-stack mobile and web developer. <br />
+							I'm passionate about bringing both the technical and visual
+							aspects of digital products to life. My expertise lies in creating
+							app and website products with an interactive user experience and
+							in writing APIs that enable me to build an end-to-end application.
 							<br /> <br />
-							I am a keen young developer who is inspired and motivated by the
-							fast-paced and ever-changing environment of software development.
-							Bringing the technical and visual aspects of digital products to
-							life is my passion.
-							<br /> <br />I am a keen young developer who is inspired and
-							motivated by the fast-paced and ever-changing environment of
-							software development. Bringing the technical and visual aspects of
-							digital products to life is my passion.
+							With over 4.5 years of industry experience developing iOS
+							applications, I have decided to branch out into other languages.
+							Therefore, I have acquired education and practical experience at
+							MERN because it is not harmful to learn and stay current.
+							<br /> <br />
+							The way animation works really fascinates me, I would love to explore and learn about it.
+							I also enjoy watching fictional movies and television
+							series 📺, participating in outdoor activities like trekking 🏃🏻‍♀️, and
+							dancing 👯‍♀️ during my leisure time.
 						</p>
 					</div>
 				</div>
