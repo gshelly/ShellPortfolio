@@ -24,6 +24,9 @@ export default function Color(props) {
   &:hover {
      border: 1px solid white;
     }
+    @media screen and (max-width: 768px) {
+      width: 17px;
+  }
   `
 
   const ColorPickerView = styled.div`
@@ -37,7 +40,6 @@ export default function Color(props) {
  
   @media screen and (max-width: 768px) {
     margin-left: -50px;
-    padding: 10px;
   }
   `
   const checkIconStyling = {
