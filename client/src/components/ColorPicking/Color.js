@@ -26,6 +26,8 @@ export default function Color(props) {
 			width: 20px;
 			height: 20px;
 			border-radius: 10px;
+      margin: 0px 5px;
+      position: static;
 		}
 	`;
 
@@ -40,6 +42,7 @@ export default function Color(props) {
 
 		@media screen and (max-width: 768px) {
 			margin-left: -50px;
+      position: static;
 		}
 	`;
 	const checkIconStyling = {
