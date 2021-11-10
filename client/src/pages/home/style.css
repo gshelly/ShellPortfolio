@@ -12,13 +12,25 @@
 @media (max-width: 1000px) {
   .homeBackground {
   background: url("../../images/mobileBackground1.png")  top left; 
-  position: relative;
+  position: fixed;
   height: 100vh; 
   width: 100vw;
   background-size: cover;
   background-repeat: no-repeat;
   }
 }
+
+@media (max-width: 768px) {
+  .homeBackground {
+  background: url("../../images/mobileBackground1.png")  top left; 
+  position: relative;
+  height: 100%; 
+  width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+}
+
 
 .nameHeading {
   text-align: left; 
