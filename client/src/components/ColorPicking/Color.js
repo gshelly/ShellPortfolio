@@ -36,7 +36,8 @@ export default function Color(props) {
   border-radius: 5px;
  
   @media screen and (max-width: 768px) {
-    margin-left: -30px;
+    margin-left: -50px;
+    padding: 10px;
   }
   `
   const checkIconStyling = {

@@ -61,7 +61,7 @@ const Services = (props) => {
 							<SiJavascript style={{ fontSize: "20px", margin: "0px 10px" }} />
 						</div>
 						<div>
-							<a href="https://github.com/gshelly/ShellPortfolio">
+							<a href="https://www.shellyguptaz.com/">
 								<button
 									className="view-button"
 									style={{

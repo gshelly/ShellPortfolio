@@ -15,6 +15,12 @@
   padding:0px;
 }
 
+/* @media screen and (max-width: 768px) {
+  .dropdown-menu li {
+    padding:30px;
+  }
+} */
+
 /* .dropdown-menu li:hover {
   background: #5cabff;
 } */
