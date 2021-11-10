@@ -22,9 +22,9 @@ export default function Color(props) {
 		&:hover {
 			border: 1px solid white;
 		}
-		@media screen and (max-width: 768px) {
+		/* @media screen and (max-width: 768px) {
       border-radius: 5px;
-		}
+		} */
 	`;
 
 	const ColorPickerView = styled.div`
