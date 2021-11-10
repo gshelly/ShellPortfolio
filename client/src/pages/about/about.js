@@ -44,21 +44,16 @@ export default function About(props) {
 						</h1>
 						<p>
 							{" "}
-							A curiosity-driven full-stack mobile and web developer. <br />
-							I'm passionate about bringing both the technical and visual
-							aspects of digital products to life. My expertise lies in creating
-							app and website products with an interactive user experience and
-							in writing APIs that enable me to build an end-to-end application.
+							A curiosity-driven iOS and full-stack developer. <br />
+							Passionate about bringing both the technical and visual
+							aspects of digital products to life. My expertise lies in iOS & Full Stack Development
+							 with a focus on interactive user experience and building an end-to-end application.
 							<br /> <br />
 							With over 4.5 years of industry experience developing iOS
-							applications, I have decided to branch out into other languages.
-							Therefore, I have acquired education and practical experience at
-							MERN because it is not harmful to learn and stay current.
+							applications, I have decided to branch out into full stack technologies by deep diving into MERN and developing various passion projects.
 							<br /> <br />
-							The way animation works really fascinates me, I would love to explore and learn about it.
-							I also enjoy watching fictional movies and television
-							series 📺, participating in outdoor activities like trekking 🏃🏻‍♀️, and
-							dancing 👯‍♀️ during my leisure time.
+							Apart from being a techie exploring technologies and its unlimited possibilities,
+							I am also a movie enthusiast 📺. Love dancing 👯‍♀️ and outdoor trekking 🏃🏻‍♀️
 						</p>
 					</div>
 				</div>

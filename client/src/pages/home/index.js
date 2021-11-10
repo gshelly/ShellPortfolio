@@ -38,10 +38,10 @@ const Home = (props) => {
 					</h1>
 					{/* <div> */}
 					<p className="intro">
-						I am a full-stack developer living in San
-						Jose, CA. I have worked on iPhone App projects for clients, now I am
-						working on upgrading my skills set by developing projects using
-						MERN(MongoDb, React js, Node js, Express js) If you're looking for
+						An iOS & full-stack developer living in San
+						Jose, CA. Have strong experience in developing iOS Apps, and have 
+						recently widened my spectrum to full stack developement with
+						MERN (MongoDb, React, Node & Express). Love to take up new challenges and if you're looking for
 						an employee to hire, please get in touch{" "}
 						<button
 							onClick={navigateContact}
