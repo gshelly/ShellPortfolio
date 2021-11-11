@@ -113,7 +113,7 @@ const Services = (props) => {
 						<div>
 							<a href="http://18.219.101.119/">
 								<button
-									className="view-button"
+									className="view-button block"
 									style={{
 										backgroundColor: selectedColor,
 									}}
@@ -162,7 +162,7 @@ const Services = (props) => {
 						<div>
 							<a href="http://18.118.137.27/">
 								<button
-									className="view-button"
+									className="view-button block"
 									style={{
 										backgroundColor: selectedColor,
 									}}

@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
-
 .main-container {
   font-family: 'Noto Sans Mono', monospace;
   margin: 30px 140px;
@@ -54,6 +52,12 @@
   font-size: 14px;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .block {
+    display: none;
+  }
+ }
 
 .view-button:hover {
   border-radius: 5px;
