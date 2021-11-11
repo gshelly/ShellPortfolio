@@ -111,7 +111,7 @@ const Services = (props) => {
 							<SiJavascript style={{ fontSize: "20px", margin: "0px 10px" }} />
 						</div>
 						<div>
-							<a href="https://github.com/gshelly/stumbleOnCelluloid">
+							<a href="http://18.219.101.119/">
 								<button
 									className="view-button"
 									style={{
@@ -160,7 +160,7 @@ const Services = (props) => {
 							<SiJavascript style={{ fontSize: "20px", margin: "0px 10px" }} />
 						</div>
 						<div>
-							<a href="https://github.com/gshelly/RejuvenatingYou">
+							<a href="http://18.118.137.27/">
 								<button
 									className="view-button"
 									style={{
