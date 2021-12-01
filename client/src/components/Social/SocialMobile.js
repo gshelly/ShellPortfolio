@@ -58,7 +58,7 @@ export default function SocialMobile(props) {
 	return (
 		<div className="m-social-container">
 			<a
-				href="https://www.linkedin.com/in/shelly-gupta-370a04143/"
+				href="https://www.instagram.com/shellyJgupta/"
 				className="m-linkedin m-social"
 				onMouseEnter={onMouseEnterLinkedin}
 				onMouseLeave={onMouseLeaveLinkedin}
