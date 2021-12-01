@@ -58,7 +58,7 @@ export default function SocialMobile(props) {
 	return (
 		<div className="m-social-container">
 			<a
-				href="https://www.instagram.com/shellyJgupta/"
+				href="https://www.linkedin.com/in/shelly-gupta-370a04143/"
 				className="m-linkedin m-social"
 				onMouseEnter={onMouseEnterLinkedin}
 				onMouseLeave={onMouseLeaveLinkedin}
@@ -85,7 +85,7 @@ export default function SocialMobile(props) {
 				<FontAwesomeIcon icon={faTwitter} size="1x" />
 			</a>
 			<a
-				href="https://www.instagram.com/shelly_gupta21/"
+				href="https://www.instagram.com/shellyJgupta/"
 				className="m-instagram m-social"
 				onMouseEnter={onMouseEnterInstagram}
 				onMouseLeave={onMouseLeaveInstagram}

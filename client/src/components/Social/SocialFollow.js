@@ -85,7 +85,7 @@ export default function SocialFollow(props) {
 				<FontAwesomeIcon icon={faTwitter} size="1x" />
 			</a>
 			<a
-				href="https://www.instagram.com/shelly_gupta21/"
+				href="https://www.instagram.com/shellyJgupta/"
 				className="instagram social"
 				onMouseEnter={onMouseEnterInstagram}
 				onMouseLeave={onMouseLeaveInstagram}
